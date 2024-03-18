@@ -1,5 +1,5 @@
 MCP4131	KEYWORD1
-readVolume	KEYWORD2
-writeVolume	KEYWORD2
-decrementVolume	KEYWORD2
-incrementVolume	KEYWORD2
+readValue	KEYWORD2
+writeValue	KEYWORD2
+decrementValue	KEYWORD2
+incrementValue	KEYWORD2
