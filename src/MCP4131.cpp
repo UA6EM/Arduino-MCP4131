@@ -17,11 +17,11 @@ MCP4131::MCP4131(int slavePin) {
 	pinMode(slavePin, OUTPUT);
 }
 
-byte MCP4131::readWiper() {
+byte MCP4131::readVolume() {
     return sendCommand(ADDRESS_WIPER0, COMMAND_READ, 255);
 }
 
-void MCP4131::writeWiper(unsigned int wiperValue) {  
+void MCP4131::writeVolume(unsigned int wiperValue) {  
     sendCommand(ADDRESS_WIPER0, COMMAND_WRITE, wiperValue);
 }
 
@@ -65,11 +65,11 @@ byte MCP4131::sendCommand(byte address, char command, unsigned int data) {
     
 }
 
-void MCP4131::decrementWiper() {
+void MCP4131::decrementVolume() {
     sendCommand(ADDRESS_WIPER0, COMMAND_DECREMENT);
     }
 
-void MCP4131::incrementWiper() {
+void MCP4131::incrementVolume() {
     sendCommand(ADDRESS_WIPER0, COMMAND_INCREMENT);
 }
 
