@@ -14,10 +14,10 @@ class MCP4131
 {
     public:
         MCP4131(int slave_select_pin);
-        byte readWiper();
-        void writeWiper(unsigned int wiperValue);
-        void decrementWiper();
-        void incrementWiper();
+        byte readVolume();
+        void writeVolume(unsigned int wiperValue);
+        void decrementVolume();
+        void incrementVolume();
 
     private:
         const static byte ADDRESS_WIPER0 = 0x0;
